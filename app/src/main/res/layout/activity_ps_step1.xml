@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.profileSetup.Activity_PS_Step1">
+
+
+    <!-- Back Button Container -->
+    <FrameLayout
+        android:id="@+id/aclBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/aclBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+
+        <!-- Logout Button -->
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/logout"
+            android:src="@drawable/logout_icon"
+            app:tint="@color/red_btn_bg_color" />
+    </FrameLayout>
+
+    <ScrollView android:id="@+id/vlScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aclBackButtonContainer">
+        <LinearLayout android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp" >
+
+            <TextView android:id="@+id/work_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_your_profile"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="24sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_gravity="start" />
+            <TextView android:id="@+id/work_title_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/let_us_know_how_to_properly_address_you"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="start" />
+
+            <TextView android:hint="@string/label_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?android:attr/textColorPrimary" />
+            <EditText android:id="@+id/input_fName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/example_first_name"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="?android:attr/colorControlHighlight"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView android:hint="@string/label_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?android:attr/textColorPrimary" />
+            <EditText android:id="@+id/input_lName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/example_last_name"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="?android:attr/colorControlHighlight"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout android:id="@+id/email_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView android:hint="@string/label_email_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="?android:attr/textColorPrimary" />
+                <EditText android:id="@+id/email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="@string/example_email_address"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/rounded_background"
+                    android:backgroundTint="?android:attr/colorControlHighlight"
+                    android:textSize="14sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorSecondary"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/phone_no_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView android:hint="@string/label_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="?android:attr/textColorPrimary" />
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp" >
+                    <com.hbb20.CountryCodePicker android:id="@+id/ccpAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rounded_background"
+                        android:backgroundTint="?android:attr/colorControlHighlight"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        app:ccp_showArrow="false"
+                        app:ccp_showNameCode="false"
+                        app:ccp_countryPreference="US"
+                        app:ccp_showFlag="false"
+                        app:ccpDialog_textColor="?android:attr/textColorPrimary"
+                        app:ccpDialog_backgroundColor="?android:attr/colorBackground"
+                        android:textColor="?android:attr/textColorPrimary" />
+                    <EditText android:id="@+id/inputMobileNo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_background"
+                        android:backgroundTint="?android:attr/colorControlHighlight"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/example_phone_number"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textColorHint="?android:attr/textColorSecondary"
+                        android:inputType="phone"
+                        android:textSize="16sp"
+                        android:paddingHorizontal="12dp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            <TextView android:hint="@string/label_last_four_digits_of_ssn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:textColor="?android:attr/textColorPrimary" />-->
+<!--            <EditText-->
+<!--                android:id="@+id/input_ssn4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:maxLength="4"-->
+<!--                android:hint="@string/your_ssn"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:background="@drawable/rounded_background"-->
+<!--                android:backgroundTint="?android:attr/colorControlHighlight"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="?android:attr/textColorPrimary"-->
+<!--                android:textColorHint="?android:attr/textColorSecondary"-->
+<!--                android:fontFamily="@font/poppins"-->
+<!--                android:paddingVertical="8dp"-->
+<!--                android:paddingHorizontal="12dp"-->
+<!--                android:layout_marginBottom="16dp" />-->
+
+            <TextView android:hint="@string/label_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?android:attr/textColorPrimary" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="?android:attr/colorControlHighlight"
+                android:layout_marginBottom="16dp" >
+                <EditText android:id="@+id/input_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorSecondary"
+                    android:paddingHorizontal="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword" />
+                <ImageView android:id="@+id/toggle_PasswordVisibility"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/password_icon"
+                    android:contentDescription="@string/toggle_password_visibility"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    app:tint="?android:attr/textColorPrimary" />
+            </LinearLayout>
+
+            <!-- Enter confirm password -->
+            <TextView android:hint="@string/label_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?android:attr/textColorPrimary" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="?android:attr/colorControlHighlight"
+                android:layout_marginBottom="16dp" >
+
+                <EditText android:id="@+id/input_ConfirmPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/enter_confirm_password"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorSecondary"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp" />
+
+                <ImageView android:id="@+id/toggle_ConfirmPasswordVisibility"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/password_icon"
+                    android:contentDescription="@string/toggle_password_visibility"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    app:tint="?android:attr/textColorPrimary" />
+            </LinearLayout>
+
+            <!-- Password validations -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"> <!-- Space between items -->
+
+                    <ImageView
+                        android:id="@+id/passStrengthImg"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/warning_circle"
+                        android:contentDescription="@string/fulfilled" />
+
+                    <TextView
+                        android:id="@+id/passStrength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="@string/password_strength"
+                        android:textColor="@color/red_btn_bg_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/containUpperCaseImg"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/warning_circle"
+                        android:contentDescription="@string/unsatisfied" />
+
+                    <TextView
+                        android:id="@+id/containUpperCase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/contains_uppercase_letter"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/red_btn_bg_color"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/lengthLeast8Img"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/warning_circle"
+                        android:contentDescription="@string/fulfilled" />
+
+                    <TextView
+                        android:id="@+id/lengthLeast8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/at_least_8_characters"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/red_btn_bg_color"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/containNumberSpecialCharImg"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/warning_circle"
+                        android:contentDescription="@string/unsatisfied" />
+
+                    <TextView
+                        android:id="@+id/containNumberSpecialChar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/contains_a_number_or_special_character"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/red_btn_bg_color"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:text="@string/next_add_home_address_1_8"
+                android:id="@+id/aclContinueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:paddingTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primary"/>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

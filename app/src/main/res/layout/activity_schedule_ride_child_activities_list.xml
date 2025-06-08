@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.scheduleRide.Activity_ScheduleRide_Child_ActivitiesList">
+
+    <FrameLayout android:id="@+id/aclBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/aclBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+    </FrameLayout>
+
+    <TextView android:id="@+id/textChildAndActivitiesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activities"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aclBackButtonContainer" />
+    <HorizontalScrollView android:id="@+id/daysSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:background="?android:attr/colorBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textChildAndActivitiesName" >
+        <LinearLayout android:id="@+id/buttonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/dayMonday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_mon" />
+            <Button android:id="@+id/dayTuesday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_tue" />
+            <Button android:id="@+id/dayWednesday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_wed" />
+            <Button android:id="@+id/dayThursday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_thu" />
+            <Button android:id="@+id/dayFriday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_fri" />
+            <Button android:id="@+id/daySaturday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_sat" />
+            <Button android:id="@+id/daySunday"
+                style="@style/CircularButtonStyle"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins"
+                android:stateListAnimator="@null"
+                android:textSize="12sp"
+                android:text="@string/day_sun" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/aclScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:visibility="invisible"
+        android:background="?android:attr/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysSelection">
+
+        <LinearLayout
+            android:id="@+id/theChildActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/aclNoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysSelection">
+
+        <ImageView
+            android:id="@+id/aclNoContentImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/error" />
+
+        <TextView
+            android:id="@+id/aclNoContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/no_activity_found"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

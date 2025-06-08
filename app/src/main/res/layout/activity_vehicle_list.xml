@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.vehicles.Activity_VehicleList">
+
+    <FrameLayout android:id="@+id/vlBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/vlBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+    </FrameLayout>
+
+    <TextView android:id="@+id/textVehicleHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vehicle_list"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vlBackButtonContainer" />
+
+    <ScrollView android:id="@+id/vlScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textVehicleHeading"
+        app:layout_constraintBottom_toTopOf="@+id/vlAddMore"
+        tools:layout_editor_absoluteX="1dp">
+        <LinearLayout android:id="@+id/llVehicleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+    <LinearLayout android:id="@+id/vlNoContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/textVehicleHeading"
+        app:layout_constraintBottom_toTopOf="@+id/vlAddMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+        <ImageView android:id="@+id/aclNoContentImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/error" />
+        <TextView android:id="@+id/aclNoContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/no_activity_found"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button android:id="@+id/vlAddMore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/add_another_vehicle"
+        android:layout_marginTop="16dp"
+        android:enabled="true"
+        android:paddingTop="12dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/white"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

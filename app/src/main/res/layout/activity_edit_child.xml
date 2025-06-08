@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.children.Activity_Child_Edit">
+
+    <FrameLayout android:id="@+id/editChildBackCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/editChildBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+    </FrameLayout>
+
+    <LinearLayout android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editChildBackCont">
+
+        <TextView android:id="@+id/aclHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_details"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp" />
+
+        <ImageView android:id="@+id/editChildImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/circular_image"
+            android:clipToOutline="true"
+            android:src="@drawable/default_user" />
+        <TextView android:hint="@string/label_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <EditText android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/example_first_name"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background" />
+
+        <TextView android:hint="@string/label_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/example_last_name"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background" />
+
+        <TextView android:hint="@string/label_date_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <EditText
+            android:id="@+id/editChildDOB"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/example_dob"
+            android:focusable="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="6dp"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background"/>
+
+        <TextView android:hint="@string/label_select_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <Spinner android:id="@+id/editChildGenderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:spinnerMode="dropdown"
+            android:paddingTop="4dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins"
+            android:popupBackground="?android:attr/colorBackground"
+            android:background="@drawable/rounded_background" />
+
+        <TextView android:hint="@string/label_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" >
+            <com.hbb20.CountryCodePicker android:id="@+id/editChildPhoneNumberCode"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_background"
+                android:fontFamily="@font/poppins"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"
+                app:ccp_countryPreference="US"
+                app:ccp_showFlag="false" />
+            <EditText android:id="@+id/editChildPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_background"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/example_phone_number"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/editChildFrontRide"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp" >
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ride_in_front"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:textSize="14dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/editChildFrontRideSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/editChildBoosterSeat"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp" >
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/booster_seat_required"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/editChildBoosterSeatSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/cvButtonDeleteCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent" >
+            <Button android:id="@+id/editChildSaveChild"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/update"
+                style="@style/btnStyle"
+                android:backgroundTint="@color/primary" />
+
+            <Button android:id="@+id/cvButtonDelete"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                style="@style/btnStyle"
+                android:backgroundTint="@android:color/holo_red_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,452 @@
+<resources>
+    <string name="app_name">LyncWyze</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="profile_button">All details</string>
+    <string name="my_children">My Children</string>
+    <string name="text_referral_from">"Referral from: "</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="schedule_a_ride">Schedule A Ride</string>
+    <string name="ride_given">Ride Given</string>
+    <string name="ride_taken">Ride Taken</string>
+    <string name="pounds_of_co2_saved">Pounds of CO2 Saved</string>
+    <string name="back_button_description">Back button</string>
+    <string name="notify_me">Notify me</string>
+    <string name="email_address">Email Address</string>
+    <string name="label_email_address">Email Address <font color='#FF0000'>*</font></string>
+    <string name="label_full_name">Full Name <font color='#FF0000'>*</font></string>
+    <string name="example_full_name">Full Name</string>
+    <string name="let_us_know_how_to_properly_address_you">Let us know how to properly address you</string>
+    <string name="notify_me_screen_message">Pre-register for free ride credits when we launch the full app</string>
+    <string name="enter_your_details">Enter your details</string>
+    <string name="warn_empty_phone">Please enter phone number.</string>
+    <string name="warn_invalid_phone">Please enter a valid Phone.</string>
+    <string name="warn_empty_email">Please enter a email address.</string>
+    <string name="warn_invalid_email">Please enter a valid email address.</string>
+    <string name="warn_empty_password">Please enter password.</string>
+    <string name="warn_invalid_password">Please enter valid password.</string>
+    <string name="warn_enter_email">Please enter your email address.</string>
+    <string name="want_enter_full_name">Please enter your full name.</string>
+    <string name="saved_successfully">Saved successfully</string>
+    <string name="unable_to_save">Unable to save!</string>
+    <string name="notified_availability_ms">Get Notified of Our Availability.</string>
+    <string name="notified_availability_message">We\'ll notify you as soon as we\'re available in your area.</string>
+    <string name="mobile_number">Phone Number</string>
+    <string name="select_country_and_enter_your_phone_number">Select country and enter your phone number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="example_phone_number">1234-567</string>
+    <string name="label_phone_number">Phone number <font color='#FF0000'>*</font></string>
+    <string name="continueTxt">Continue</string>
+    <string name="or_Txt">Or</string>
+    <string name="ok_Txt">OK</string>
+    <string name="enter_verification_code">Enter Verification code</string>
+    <string name="sent_on_your_mobile_number">Sent on your phone number:</string>
+    <string name="did_not_receive_the_code_yet">Did not receive the code yet?</string>
+    <string name="resend_new_verification_code">Resend new Verification code</string>
+    <string name="enter_password">Enter password</string>
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="fulfilled">Fulfilled</string>
+    <string name="unsatisfied">Unsatisfied</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="label_last_four_digits_of_ssn">Last 4 Digits of SSN <font color='#FF0000'>*</font></string>
+    <string name="last_four_digits_of_ssn">Last 4 Digits of SSN</string>
+    <string name="warn_last_four_digits_of_ssn">Please provide last 4 digits of SSN</string>
+    <string name="warn_empty_last_name">Last name cannot be empty</string>
+    <string name="last_name">Last Name</string>
+    <string name="label_last_name">Last Name <font color='#FF0000'>*</font></string>
+    <string name="warn_empty_first_name">First name cannot be empty</string>
+    <string name="first_name">First Name</string>
+    <string name="label_first_name">First Name <font color='#FF0000'>*</font></string>
+    <string name="create_your_profile">Create your Profile</string>
+    <string name="password_strength">Password Strength</string>
+    <string name="contains_uppercase_letter">Contains uppercase letter</string>
+    <string name="at_least_8_characters">At least 8 characters</string>
+    <string name="contains_a_number_or_special_character">Contains a number or special character</string>
+    <string name="strong">Strong</string>
+    <string name="background_verification">License details</string>
+    <string name="your_ssn">Your SSN</string>
+    <string name="driver_license_capture_photo">Driver License - Capture Photo</string>
+    <string name="dl000000000000" translatable="false">DL000000000000</string>
+    <string name="license_number">License number</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="address">Address</string>
+    <string name="home_address">Home Address</string>
+    <string name="select_home_address_and_city">Select Home Address and City</string>
+    <string name="enter_your_home_address">Enter your home address</string>
+    <string name="background_image">Background image</string>
+    <string name="location_icon">Location icon</string>
+    <string name="please_select_a_location">Please select a location</string>
+    <string name="error_txt">Error: </string>
+    <string name="exception_collen">Exception: %1$s</string>
+    <string name="profile_successfully_created">Profile Successfully Created</string>
+    <string name="_01_jan_2030">2030-01-30</string>
+    <string name="please_add_emergency_contact">Please add emergency contact</string>
+    <string name="error_getting_child_id">Error getting child id</string>
+    <string name="error_getting_contact_id">Error getting contact id</string>
+    <string name="activity_details">Activity Details</string>
+    <string name="giver">Giver</string>
+    <string name="taker">Taker</string>
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+    <string name="add_more_activity">Add More Activity</string>
+    <string name="add_child">Add Child</string>
+    <string name="no_activity_found">No Activity Found</string>
+    <string name="no_activity_found_for">No Activity Found for</string>
+    <string name="no_child_added">No Child Added</string>
+    <string name="no_more_child_found">No more child found</string>
+    <string name="no_more_activities_found">No more activities found</string>
+    <string name="select">Select</string>
+    <string name="proceed_to_default_schedule">Proceed to Default Schedule</string>
+    <string name="activity_type">Activity Type <font color='#FF0000'>*</font></string>
+    <string name="activity_sub_type">Activity Sub Type <font color='#FF0000'>*</font></string>
+    <string name="activity_location_address">Activity Location / Address <font color='#FF0000'>*</font></string>
+    <string name="activity_time">Activity Time <font color='#FF0000'>*</font></string>
+    <string name="please_select_activity_type">Please select activity type</string>
+    <string name="please_provide_activity_sub_type">Please provide activity sub type</string>
+    <string name="please_add_the_activity_location">Please add the activity location</string>
+    <string name="_6_00_7_00_pm">6:00-7:00 PM</string>
+    <string name="save">Save</string>
+    <string name="apply">Apply</string>
+    <string name="min">min</string>
+    <string name="preferred_pickup_time">Preferred Pickup Time</string>
+    <string name="ride_preference">Ride Preference</string>
+    <string name="change_ride_preference">Change Ride Preference</string>
+    <string name="ride_giver">Ride Giver</string>
+    <string name="ride_taker">Ride Taker</string>
+    <string name="please_fill_activity_time_of_corresponding_day">Please fill activity time of corresponding day</string>
+    <string name="please_select_an_option">Please select an option.</string>
+    <string name="please_fill_ride_preference_of_corresponding_day">Please fill ride preference of corresponding day</string>
+    <string name="fetching_error">Fetching error!</string>
+    <string name="activity_saved_successfully">Activity saved successfully</string>
+    <string name="my_vehicles">My Vehicles</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="add_another_vehicle">Add Another Vehicle</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="vehicle_list">Vehicle List</string>
+    <string name="vehicle_detail">Vehicle Detail</string>
+    <string name="add_vehicle_to_list_them">Add vehicle to list them</string>
+    <string name="children">Children</string>
+    <string name="maker">Maker <font color='#FF0000'>*</font></string>
+    <string name="enter_your_car_model">Enter Your Car Model</string>
+    <string name="select_your_car_modal">Enter Your Car Modal</string>
+    <string name="i_don_t_have_a_car">I don’t have a car</string>
+    <string name="is_this_your_primary_vehicle">Is this your Primary Vehicle?</string>
+    <string name="alias">Alias</string>
+    <string name="please_enter_the_vehicle_make">Please enter the vehicle make.</string>
+    <string name="please_select_the_vehicle_model">Please select the vehicle model.</string>
+    <string name="please_enter_the_vehicle_color">Please enter the vehicle color.</string>
+    <string name="please_enter_the_license_plate">Please enter the license plate.</string>
+    <string name="please_enter_an_alias_for_the_vehicle">Please enter an alias for the vehicle.</string>
+    <string name="please_select_a_vehicle_type">Please select a vehicle type.</string>
+    <string name="model">Model</string>
+    <string name="modal">Modal <font color='#FF0000'>*</font></string>
+    <string name="your_vehicle_maker">Maker of your vehicle</string>
+    <string name="review_and_update_your_children_profile">Review and update your children profile</string>
+    <string name="no_emergency_contact">No emergency contact</string>
+    <string name="emergency_contacts">Emergency contacts</string>
+    <string name="add">Add</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="children_info">Children Info</string>
+    <string name="provide_details_of_your_children">Provide details of your children</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="label_date_of_birth">Date of Birth <font color='#FF0000'>*</font></string>
+    <string name="found_nothing">Found nothing</string>
+    <string name="found_nothing_to_list">Found nothing to list</string>
+    <string name="delete">Delete</string>
+    <string name="delete_successful">Delete Successful</string>
+    <string name="child_deleted_successfully">Child deleted successfully</string>
+    <string name="unable_to_delete_child">Unable to delete child</string>
+    <string name="unable_to_delete">Unable to delete</string>
+    <string name="warn_empty_city">Please enter city</string>
+    <string name="warn_empty_state">Please enter state</string>
+    <string name="warn_invalid_address">Invalid address</string>
+    <string name="warn_invalid_zipcode">Invalid zipcode</string>
+    <string name="failed_to_resolve_file_path">Failed to resolve file path!</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions</string>
+    <string name="sign_in_txt">Sign In</string>
+    <string name="sign_in_with_you_register_email">Sign in with you register email</string>
+    <string name="credentials_not_found">Credentials not found!</string>
+    <string name="saving_error">Error while</string>
+    <string name="update">Update</string>
+    <string name="saved_successful">Saved Successful</string>
+    <string name="update_successful">Update Successful</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="activities">Activities</string>
+    <string name="error_getting_vehicle_id">Error getting vehicle id</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="by_default_with_model_number">By Default with Model Number</string>
+    <string name="by_default_with_modal_number">By Default with Modal Number</string>
+    <string name="probability_of_getting_the_ride">Probability of getting the ride:</string>
+    <string name="don_t_have_account_let_s_create">Don\'t have an account? let\'s Create</string>
+    <string name="already_have_an_account_let_s_sign_in">Already have an account? <font color="#2196F3">Let\'s Sign In</font></string>
+    <string name="schedule_now_text">Schedule Now</string>
+    <string name="maybe_later_text">Maybe Later</string>
+    <string name="not_this_one_text">Not This One</string>
+    <string name="submit_text">Submit</string>
+    <string name="dropped_text">Dropped</string>
+    <string name="picked_txt">Picked</string>
+    <string name="start_text">Start</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="started_txt">Started</string>
+    <string name="add_more">Add More</string>
+    <string name="sing_in">Sign in?</string>
+    <string name="sign_up">Sign up?</string>
+    <string name="provider_not_found">Provider not found?</string>
+    <string name="title_activity_on_going_ride">Activity_OnGoingRide</string>
+    <string name="choose_child_to_view_activities">Choose child to view activities</string>
+    <string name="error_getting_activity_id">Error getting activity Id</string>
+    <string name="found_nothing_to_show">Found nothing to show</string>
+    <string name="exterior_colours">Exterior colours</string>
+    <string name="license_plate">License Plate <font color='#FF0000'>*</font></string>
+    <string name="body_color">Body Color <font color='#FF0000'>*</font></string>
+    <string name="truck">Truck</string>
+    <string name="sedan">Sedan</string>
+    <string name="suv">SUV</string>
+    <string name="body_style">Body Style <font color='#FF0000'>*</font></string>
+    <string name="child_name_activity_details">child_name - Activity details</string>
+    <string name="in_progress_ride">In-progress ride</string>
+    <string name="arrived_at_location">Arrived at location</string>
+    <string name="dropped_at_home">Dropped at home</string>
+    <string name="heading_to_pick_from_activity">Heading to pick up from activity.</string>
+    <string name="reached_activity_for_pickup">Reached activity for pickup</string>
+    <string name="picked_up_from_activity_txt">Picked up from activity</string>
+    <string name="reached_your_location">Reached your location</string>
+    <string name="picked_up">Picked up</string>
+    <string name="ride_completed_txt">Ride Completed</string>
+    <string name="drop">Drop</string>
+    <string name="pick">Pick</string>
+    <string name="drop_pick">Drop and Pick</string>
+    <string name="drop_off">Drop Off</string>
+    <string name="pick_up">Pick up</string>
+    <string name="___">___</string>
+    <string name="parent_notified_ride_has_arrived">Parent notified: Ride has arrived</string>
+    <string name="__time_placeholder">--:--</string>
+    <string name="rider_arrived">Rider Arrived</string>
+    <string name="rider_arrived_home">Rider Arrived Home</string>
+    <string name="the_rider_has_arrived_at_the_pickup_location">The rider has arrived at the pickup location.</string>
+    <string name="the_rider_has_arrived_at_the_drop_location">The rider has arrived at the drop location.</string>
+    <string name="confirm_pick_up">Confirm Pick Up</string>
+    <string name="confirm_drop">Confirm Drop</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="modified_date">Modified Date</string>
+    <string name="user_id">User ID</string>
+    <string name="created_date">Created Date</string>
+    <string name="label_state">State <font color='#FF0000'>*</font></string>
+    <string name="label_city">City <font color='#FF0000'>*</font></string>
+    <string name="label_address_line_1">Address line 1 <font color='#FF0000'>*</font></string>
+    <string name="address_line_1">Address line 1</string>
+    <string name="address_line_2">Address line 2</string>
+    <string name="landmark">Landmark</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="label_zip_code">Zip Code <font color='#FF0000'>*</font></string>
+    <string name="zip_code">Zip Code</string>
+    <string name="example_zip_code">110393</string>
+    <string name="next_add_profile_picture_2_8">Next: Add Profile Picture (2/8)</string>
+    <string name="edit">Edit</string>
+    <string name="profile_image_option">Profile Image Option</string>
+    <string name="change_txt">Change</string>
+    <string name="want_to_change_profile_image">Want to change profile image?</string>
+    <string name="no_data_found">No data found</string>
+    <string name="image_uploaded_successfully">Image uploaded successfully</string>
+    <string name="ride_not_started_yet">Ride not started yet!</string>
+    <string name="notify_reached_home">Notify reached Home</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="ride_type">Ride type</string>
+    <string name="select_an_ride_taker_option_to_proceed">Select an ride taker option to proceed!</string>
+    <string name="localization_error">Localization error:</string>
+    <string name="clean_vehicle">Clean Vehicle</string>
+    <string name="friendliness">Friendliness</string>
+    <string name="mimi">Mimi</string>
+    <string name="driving">Driving</string>
+    <string name="punctuality">Punctuality</string>
+    <string name="vehicle_cleanliness">Vehicle Cleanliness</string>
+    <string name="communication">Communication</string>
+    <string name="the_test">The Test</string>
+    <string name="give_feedback">Give feedback</string>
+    <string name="reached">Reached</string>
+    <string name="what_time">What time</string>
+    <string name="please_login">Please login!</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="label_select_gender">Select Gender <font color='#FF0000'>*</font></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="please_add_activity_days_and_time">Please add activity days and time</string>
+    <string name="example_first_name">First Name</string>
+    <string name="example_last_name">Last Name</string>
+    <string name="min_early">min early</string>
+    <string name="example_dob">02-Apr-2020</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="label_password">Password <font color='#FF0000'>*</font></string>
+    <string name="label_confirm_password">Confirm Password <font color='#FF0000'>*</font></string>
+    <string name="example_email_address">abc@mail.com</string>
+    <string name="subscribe_to_newsletter">Subscribe to Newsletter</string>
+    <string name="you_will_receive_an_otp_for_verification">You will receive an OTP for verification.</string>
+    <string name="sign_up_with_number">Sign up with Number</string>
+    <string name="warn_confirm_password_no_match">Confirm password must be same as password.</string>
+    <string name="you_have_been_logged_out">You have been logged out.</string>
+    <string name="error_logging_out">Error logging out.</string>
+    <string name="all_activities">All Activities</string>
+    <string name="details_added">Details added</string>
+    <string name="next_add_home_address_1_8">Next: Add Home Address (1/8)</string>
+    <string name="logout">Logout</string>
+    <string name="logout_dot">Logout...</string>
+    <string name="faq">FAQ</string>
+    <string name="how_was_your_ride_with">Please rate your experience with %1$s on %2$s</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="favorite">Favorite</string>
+    <string name="new_opt_send_successfully">New OPT send successfully!</string>
+    <string name="unable_to_sent_new_otp">Unable to sent new OTP</string>
+    <string name="error_sending_new_otp">Error sending new OTP!</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="retry">Retry</string>
+    <string name="we_are_servicing_your_area">Great news!! We are servicing your area</string>
+    <string name="ride_in_front">Ride in Front (optional)</string>
+    <string name="booster_seat_required">Booster Seat Required (optional)</string>
+    <string name="co2_saved_in_a_list">CO2 saved in a list</string>
+    <string name="show_notification">Show notification</string>
+    <string name="timing">Timing</string>
+    <string name="confirm_the_time">Confirm The Time</string>
+    <string name="upcoming_rides">Upcoming Rides</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="sign_in_with_email">Sign in with email</string>
+    <string name="sign_in_with_phone_number">Sign in with phone number</string>
+    <string name="continue_with_apple">Continue with Apple</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="take_your_profile_photo">Take your profile photo</string>
+    <string name="your_profile_photo_helps_people_recognize_you">Your profile photo helps people recognize you.</string>
+    <string name="_1_ensure_your_photo_is_clear_and_recognizable">1. Ensure your photo is clear and recognizable.</string>
+    <string name="_2_use_a_recent_photo_that_reflects_your_current_appearance">2. Use a recent photo that reflects your current appearance.</string>
+    <string name="_3_avoid_using_group_photos_focus_on_just_you">3. Avoid using group photos; focus on just you.</string>
+    <string name="our_team_will_verify_that_your_photo_is_of_a_live_person_taken_in_real_time_and_we_will_use_the_photo_to_check_for_duplication_across_other_accounts">Our team will verify that your photo is of a live person, taken in real-time and we will use the photo to check for duplication across other accounts.</string>
+    <string name="next_accept_policies">Next: Accept policies (3/8)</string>
+    <string name="accept_terms_and_privacy_policies">Accept Terms and Privacy Policies</string>
+    <string name="address_verification">Address Verification</string>
+    <string name="address_verification_description">Address on my Drivers License is same as my parmenent address.</string>
+    <string name="car_insurance_requirement">Car Insurance Requirement</string>
+    <string name="car_insurance_requirement_description">I carry at least state-required car insurance.</string>
+    <string name="driver_liability_disclaimer">Driver Liability Disclaimer</string>
+    <string name="driver_liability_disclaimer_description">I understand that, when travelling as the driver, exchange is not responsible for any accidents or harm caused to my car or the passengers in the car including myself.</string>
+    <string name="ride_taker_liability_disclaimer">Ride Taker Liability Disclaimer</string>
+    <string name="ride_taker_liability_disclaimer_description">I understand that, when travelling as the ride taker, exchange is not responsible for any accidents caused to me during any accident.</string>
+    <string name="criminal_history_affirmation">Criminal History Affirmation</string>
+    <string name="criminal_history_affirmation_description">I affirm that I have no criminal history including sex offences, DUI etc., and agree to background screening of my profile by the exchange as per their rules.</string>
+    <string name="accuracy_of_information_statement">Accuracy of Information Statement</string>
+    <string name="accuracy_of_information_statement_description">I attest that all information provided by me in the registration process is true and accurate, at the time of registration</string>
+    <string name="deciline">Deciline</string>
+    <string name="accept">Accept</string>
+    <string name="great_news">Great News!</string>
+    <string name="your_background_verification_is_complete">Your background verification is complete.</string>
+    <string name="thank_you_for_submitting_your_details">Thank you for submitting your details for background verification. We will update you in the next 24-48 hours</string>
+    <string name="sign_up_with_email">Sign up with email</string>
+    <string name="sign_up_with_phone_number">Sign up with phone number</string>
+    <string name="how_was_ride_with_abc">How was ride with ABC</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="favourite">Favourite</string>
+    <string name="submit">Submit</string>
+    <string name="update_parents">Update parents</string>
+    <string name="start_ride">Start ride</string>
+    <string name="name">Name</string>
+    <string name="any_pick_up_notes">Any pick-up notes?</string>
+    <string name="track_rider">Track rider</string>
+    <string name="rides_given">Rides Given</string>
+    <string name="rides_taken">Rides Taken</string>
+    <string name="black_white">Black, White</string>
+    <string name="full_name">Full name</string>
+    <string name="number">number</string>
+    <string name="email">email</string>
+    <string name="more_options">More Options</string>
+    <string name="sub_type">Sub Type</string>
+    <string name="_10_min_before">10 Min Before</string>
+    <string name="_20_min_before">20 Min Before</string>
+    <string name="_30_min_before">30 Min Before</string>
+    <string name="_40_min_before">40 Min Before</string>
+    <string name="drop_and_pickup_both">Drop and pickup both</string>
+    <string name="drop_only">Drop only</string>
+    <string name="pickup_only">Pickup only</string>
+    <string name="new_update_available">New Update Available</string>
+    <string name="please_update_the_app_to_continue_using_it">A new version of LyncWyze is available on the Play Store. Would you like to update now?.</string>
+    <string name="update_now">Update Now</string>
+    <string name="later">Later</string>
+    <string name="vehicle_related">Vehicle related</string>
+    <string name="child_related">Child related</string>
+    <string name="what_is_this_app_for">What is this app for?</string>
+    <string name="who_can_ride">Who can ride?</string>
+    <string name="child_1">Child 1</string>
+    <string name="child_gender">Child gender</string>
+    <string name="class_name">Class name</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="before_x">Before x</string>
+    <string name="text_1">Text 1</string>
+    <string name="text_2">Text 2</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="other_person_name">Other person name</string>
+    <string name="successfully_completed_2k_rides">Successfully completed 2k rides</string>
+    <string name="same_community">Same Community</string>
+    <string name="persoon_icon">Persoon icon</string>
+    <string name="distance">Distance</string>
+    <string name="_4_miles">4 miles</string>
+    <string name="your_location">Your location</string>
+    <string name="activity_location">Activity Location</string>
+    <string name="_05_40_pm">05:40 PM</string>
+
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.scheduleRide.Activity_ConfirmActivity">
+
+    <FrameLayout android:id="@+id/confirmActivityBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/confirmActivityBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/aconActionSection"
+        app:layout_constraintTop_toBottomOf="@+id/confirmActivityBackButtonContainer">
+        <TextView android:id="@+id/className"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp" />
+
+        <Space android:layout_width="match_parent" android:layout_height="4dp" />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView android:src="@drawable/time_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop" />
+            <TextView android:id="@+id/classTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/timing"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/primary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <View android:id="@+id/dividerRL"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/textColorSecondary" />
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?android:attr/colorBackground"
+                android:backgroundTint="@color/transparent"
+                android:gravity="center"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier="0"
+                android:orientation="vertical"
+                android:padding="4dp">
+                <TextView android:id="@+id/confirmActivityPickUpTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/colorBackground"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingHorizontal="18dp"
+                    android:paddingVertical="0dp"
+                    android:layout_marginTop="12dp"
+                    android:text="3:40 PM"
+                    android:lineSpacingExtra="0dp"
+                    android:lineSpacingMultiplier="0"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="24sp" />
+                <TextView android:id="@+id/midText"
+                    android:text="@string/___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/colorBackground"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="0dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="4dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/locale"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_icon"
+                app:tint="?android:attr/textColorPrimary" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp" >
+                <TextView android:id="@+id/actProviderAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/timing"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp" />
+                <TextView android:text="Timing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:visibility="gone"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="4dp" />
+        <LinearLayout android:id="@+id/changeRideType"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="4dp"
+            android:textAlignment="center">
+            <ImageView android:src="@drawable/edit_icon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:tint="@color/primary" />
+            <TextView android:text="@string/ride_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/probabilityTxt"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="?android:attr/textColorPrimary"
+            android:text="@string/probability_of_getting_the_ride" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/aconActionSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" >
+        <Button android:id="@+id/aconConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="@string/confirm_the_time"
+            android:layout_marginTop="16dp"
+            android:enabled="true"
+            android:paddingTop="6dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:stateListAnimator="@null"
+            android:background="@drawable/button_transparent_bg_platinum_border"/>
+        <Button android:id="@+id/aconCancel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/dialog_cancel"
+            android:layout_marginTop="16dp"
+            android:enabled="true"
+            android:paddingTop="6dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@android:color/white"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:background="@drawable/button_primary_rounded"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

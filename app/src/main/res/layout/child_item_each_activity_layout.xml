@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/align"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"  >
+
+    <ImageView android:id="@+id/childImgView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_user" />
+
+    <LinearLayout android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/ActivityType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_type"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+
+        <TextView android:id="@+id/ActivitySubType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/sub_type"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:gravity="end">
+        <TextView android:id="@+id/giverTaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/giver"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/textColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

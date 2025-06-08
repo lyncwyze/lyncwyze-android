@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="glass">#A7B3B3B3</color>
+    <color name="input_color">#F3F4F7</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#13C298</color>
+    <color name="primary_bg">#E7F5F1</color>
+    <color name="progressColor">#ffffff</color>
+    <color name="iconColor">#1C1E1F</color>
+
+    <color name="textColor">#1C1E1F</color>
+    <color name="subHeading">#5B5B5B</color>
+    <color name="primaryDark">#638FE7</color>
+    <color name="colorAccent">#13C298</color>
+    <color name="lightGreen">#E6F4F1</color>
+    <color name="dashboard_box_bg">#14069371</color>
+    <color name="platinum_color">#E7E7E7</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="orangered">#FF4500</color>
+    <color name="orange">#FFA500</color>
+    <color name="green">#008000</color>
+
+</resources>

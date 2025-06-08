@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <style name="Theme.LyncWyzeAndroid" parent="android:Theme.Material.Light.NoActionBar" />-->
+    <style name="Theme.LyncWyzeAndroid" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="Theme.LyncWyzeAndroid.Fullscreen" parent="Theme.LyncWyzeAndroid">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.LyncWyzeAndroid.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+
+    <style name="ThemeOverlay.LyncWyzeAndroid.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/white</item>
+        <item name="fullscreenTextColor">@color/textColor</item>
+    </style>
+
+    <style name="Theme.LyncWyseAndroid.Fullscreen" parent="Theme.LyncWyzeAndroid">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.LyncWyseAndroid.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+</resources>

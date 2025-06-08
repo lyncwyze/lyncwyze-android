@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.READ_MEDIA_*" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/lync_wyze"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logo_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LyncWyzeAndroid"
+        android:windowSoftInputMode="adjustPan"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity_No_Internet_Connection"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.scheduleRide.Activity_ScheduleRide_Child_ActivitiesList"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.scheduleRide.Activity_ScheduleRide_ChildList"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.childActivity.Activity_Activities_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.childActivity.Activity_Activities_ChildList"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.records.Activity_OnGoingRide"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.rideTracking.Activity_RideTracking_Taker"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.rideTracking.Activity_RideTracking_Giver"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.signUp.Activity_RegisterWithNumber"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.records.Activity_RidesUpcoming"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.profileSetup.Activity_PS_Step2_Address"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.vehicles.Activity_VehicleViewEditUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.emergencyContacts.Activity_EmergencyContact_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.children.Activity_Child_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.feedback.Activity_RideFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.signUp.Activity_RegisterWithEmail"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.Activity_AreaAvailability"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.scheduleRide.Activity_ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.emergencyContacts.Activity_EmergencyContact_List"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.vehicles.Activity_Vehicle_Add"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.childActivity.Activity_Activities_List"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.children.Activity_Child_Add"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.emergencyContacts.Activity_EmergencyContact_Add"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.vehicles.Activity_VehicleList"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.children.Activity_ChildrenList"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.settings.Activity_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.profileSetup.Activity_PS_Step5"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.profileSetup.Activity_PS_Step4"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.profileSetup.Activity_PS_Step3"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.profileSetup.Activity_PS_Step2"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.profileSetup.Activity_PS_Step1"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.signIn.Activity_LoginWithEmail"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.signUp.Activity_ValidateOTP"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.signIn.Activity_LoginWithNumber"
+            android:exported="false" />
+        <activity
+            android:name=".enteringUser.notifyMe.Activity_NotifyMe"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.records.Activity_CO2Saved"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.records.Activity_RidesTaken"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.records.Activity_RidesGiven"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.childActivity.Activity_Activities_Add"
+            android:exported="false" />
+        <activity
+            android:name=".enteredUser.Dashboard"
+            android:exported="false"
+            android:noHistory="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LyncWyzeAndroid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Assest.notificationWork.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver
+            android:name=".Assest.notificationWork.NotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION_DISMISS_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

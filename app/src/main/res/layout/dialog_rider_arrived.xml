@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="16dp" >
+
+    <ImageView android:id="@+id/aclNoContentImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/___"
+        android:src="@drawable/error"
+        android:layout_gravity="center" />
+
+    <TextView android:id="@+id/dialogTitle"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rider_arrived"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/textColor"
+        android:textSize="24sp" />
+    <TextView android:id="@+id/dialogMessage"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/subHeading"
+        android:fontFamily="@font/poppins"
+        android:text="@string/the_rider_has_arrived_at_the_pickup_location" />
+
+    <Button android:id="@+id/dialogButton"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="22dp"
+        android:textSize="16sp"
+        android:paddingTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary"
+        android:text="@string/confirm_pick_up" />
+</LinearLayout>

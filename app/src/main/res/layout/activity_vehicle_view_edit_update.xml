@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.vehicles.Activity_VehicleViewEditUpdate">
+
+    <FrameLayout android:id="@+id/vehicleEditBackCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/vehicleEditBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+    </FrameLayout>
+
+    <ScrollView android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/ecEditBtnCont"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleEditBackCont">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:orientation="vertical" >
+
+            <TextView android:text="@string/vehicle_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="24sp" />
+
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <TextView android:text="@string/maker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp" />
+
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <EditText android:id="@+id/vehEditMaker"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/rounded_background"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:hint="@string/your_vehicle_maker"/>
+
+            <Space android:layout_width="match_parent" android:layout_height="8dp" />
+            <TextView android:text="@string/modal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp" />
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <EditText android:id="@+id/vehEditModel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/rounded_background"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:hint="@string/select_your_car_modal" />
+
+            <Space android:layout_width="match_parent" android:layout_height="8dp" />
+            <TextView android:text="@string/body_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp" />
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <RadioGroup android:id="@+id/vehEditVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/vehEditRadioSUV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="SUV"
+                    android:text="@string/suv"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:fontFamily="@font/poppins" />
+                <RadioButton android:id="@+id/vehEditRadioSedan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="SEDAN"
+                    android:text="@string/sedan"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:fontFamily="@font/poppins" />
+                <RadioButton android:id="@+id/vehEditRadioTruck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="TRUCK"
+                    android:text="@string/truck"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:fontFamily="@font/poppins" />
+            </RadioGroup>
+
+            <Space android:layout_width="match_parent" android:layout_height="8dp" />
+            <TextView android:text="@string/body_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp" />
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <EditText android:id="@+id/vehEditColor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingHorizontal="16dp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/rounded_background"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:textSize="14sp"
+                android:hint="@string/exterior_colours" />
+
+            <Space android:layout_width="match_parent" android:layout_height="8dp" />
+            <TextView android:text="@string/license_plate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp" />
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <EditText android:id="@+id/vehEditLicPlate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/rounded_background"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:hint="@string/by_default_with_modal_number"/>
+
+            <Space android:layout_width="match_parent" android:layout_height="8dp" />
+            <TextView android:text="@string/alias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp" />
+            <Space android:layout_width="match_parent" android:layout_height="4dp" />
+            <EditText android:id="@+id/vehEditAlias"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/rounded_background"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:hint="@string/please_enter_an_alias_for_the_vehicle" />
+
+            <Space android:layout_width="match_parent" android:layout_height="8dp" />
+            <CheckBox android:id="@+id/vehEditIsPrimaryVehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:text="@string/is_this_your_primary_vehicle" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/ecEditBtnCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button android:id="@+id/vehEditUpdate"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:stateListAnimator="@null"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingTop="12dp"/>
+        <Button
+            android:id="@+id/vehEditDelete"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:fontFamily="@font/poppins_medium"
+            android:stateListAnimator="@null"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp" >
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" >
+        <ImageView android:id="@+id/personImg"
+            android:layout_width="60dp"
+            style="@style/NeomorphicImageViewStyle"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_user" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="8dp" >
+            <TextView android:id="@+id/otherPartyName"
+                android:text="@string/other_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20sp" />
+            <TextView android:id="@+id/otherPartySuccessRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:hint="@string/successfully_completed_2k_rides" />
+            <LinearLayout android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView android:id="@+id/communityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/same_community" />
+                <Space android:layout_width="4dp" android:layout_height="match_parent" />
+                <ImageView android:id="@+id/communityImg"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/persoon_icon"
+                    android:src="@drawable/default_user"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp" >
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="4dp" >
+                <ImageView android:id="@+id/callPerson"
+                    android:src="@drawable/call"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+                <Space android:layout_width="4dp" android:layout_height="match_parent" />
+                <ImageView android:id="@+id/messagePerson"
+                    android:src="@drawable/message"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <TextView android:text="@string/distance"
+                android:foregroundGravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:gravity="center" />
+            <TextView android:id="@+id/distanceTravel"
+                android:text="@string/_4_miles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/poppins"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="16dp" >
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp">
+                <ImageView android:src="@drawable/start_location" android:layout_width="wrap_content" android:layout_height="match_parent" />
+                <View android:background="@drawable/mid_line"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp" />
+                <ImageView android:src="@drawable/end_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:gravity="center" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="4dp" >
+                <TextView android:id="@+id/fromLocationText"
+                    android:text="@string/your_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RoundedGrayTextView"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="end" />
+                <Space android:layout_width="20dp" android:layout_height="match_parent" />
+                <TextView android:id="@+id/toLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_location"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    style="@style/RoundedGrayTextView"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:visibility="gone" android:layout_width="16dp" android:layout_height="match_parent" />
+        <ImageView  android:id="@+id/favImage"
+            android:visibility="gone"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/favourite_icon"
+            android:layout_gravity="center_vertical" />
+        <Space android:visibility="gone" android:layout_width="16dp" android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

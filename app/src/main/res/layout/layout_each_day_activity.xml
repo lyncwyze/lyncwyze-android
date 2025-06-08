@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/align"
+    android:background="?android:attr/colorBackground"
+    android:layout_marginVertical="4dp">
+
+    <ImageView
+        android:id="@+id/childImgViewEachDay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        style="@style/NeomorphicImageViewStyle"
+        android:src="@drawable/default_user" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textActivityType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_type"
+            android:fontFamily="@font/poppins"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/class_name"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textClassTiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/_6_00_7_00_pm"
+            android:fontFamily="@font/poppins"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_weight="1"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/txtPickUpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pickup_time"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="end"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pickUpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="@string/before_x"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/primary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/driveType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/___"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="end"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/editActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/icon_three_dot"
+        android:contentDescription="@string/more_options"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="?android:attr/textColorPrimary" />
+</LinearLayout>

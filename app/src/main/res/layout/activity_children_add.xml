@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.children.Activity_Child_Add">
+
+    <FrameLayout android:id="@+id/acBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/acBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+        <ImageButton android:id="@+id/logoutButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/logout"
+            android:src="@drawable/logout_icon" />
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acBackButtonContainer">
+
+        <TextView android:id="@+id/aclHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/children_info"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp" />
+        <TextView android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorSecondary"
+            android:fontFamily="@font/poppins"
+            android:text="@string/provide_details_of_your_children" />
+
+        <LinearLayout android:id="@+id/imageSelectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView android:id="@+id/adAddDP"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circular_image"
+                android:clipToOutline="true"
+                android:src="@drawable/default_user" />
+            <Button android:id="@+id/adAddDPBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/lightGreen"
+                android:drawableLeft="@drawable/camera"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:text="@string/add_photo"
+                android:stateListAnimator="@null"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView android:hint="@string/label_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <EditText android:id="@+id/acFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/example_first_name"
+            android:layout_marginBottom="12dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background" />
+
+        <TextView android:hint="@string/label_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <EditText android:id="@+id/acLastName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/example_last_name"
+            android:layout_marginBottom="12dp"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background" />
+
+        <TextView android:hint="@string/label_date_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <EditText
+            android:id="@+id/acInputDOB"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/example_dob"
+            android:focusable="false"
+            android:layout_marginBottom="12dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="6dp"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background"/>
+
+        <TextView android:hint="@string/label_select_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="12dp"
+            android:paddingTop="4dp"
+            android:textSize="14sp"
+            android:popupBackground="?android:attr/colorBackground"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/rounded_background" />
+
+        <TextView android:hint="@string/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary" />
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" >
+            <com.hbb20.CountryCodePicker android:id="@+id/ccpAddChildCcd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_background"
+                android:fontFamily="@font/poppins"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"
+                app:ccp_countryPreference="US"
+                app:ccp_showFlag="false" />
+            <EditText android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/example_phone_number"
+                android:paddingHorizontal="12dp"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/rounded_background"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/frontRide"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <TextView android:id="@+id/frontRideTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ride_in_front"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:textSize="14dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/frontRideSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/boosterSeat"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:id="@+id/boosterSeatTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/booster_seat_required"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:textSize="14dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/boosterSeatSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <Button android:id="@+id/saveChild"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/continueTxt"
+            android:enabled="true"
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

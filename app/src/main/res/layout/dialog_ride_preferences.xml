@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="16dp"
+    android:padding="24dp">
+    <TextView android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/textColor"
+        android:text="@string/ride_preference" />
+    <RadioGroup
+        android:id="@+id/radioGroupOptionsRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rideGiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="GIVER"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/ride_giver" />
+        <RadioButton android:id="@+id/rideTaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="TAKER"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/ride_taker" />
+        <RadioGroup android:id="@+id/radioGroupOptionsRPType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginStart="16dp" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DROP_PICK"
+                android:fontFamily="@font/poppins"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="@string/drop_and_pickup_both" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DROP"
+                android:fontFamily="@font/poppins"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="@string/drop_only" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="PICK"
+                android:fontFamily="@font/poppins"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="@string/pickup_only" />
+        </RadioGroup>
+    </RadioGroup>
+
+    <Button android:id="@+id/btnSaveRP"
+        android:backgroundTint="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:enabled="true"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_margin="0dp"
+        android:stateListAnimator="@null"
+        android:textColor="@android:color/white"
+        android:clickable="false"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/apply" />
+</LinearLayout>

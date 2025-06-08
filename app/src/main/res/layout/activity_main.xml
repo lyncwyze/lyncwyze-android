@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:windowBackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background_car"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom"
+        android:alpha="0.9"
+        android:background="?android:attr/colorBackground"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/car_near_park" />
+
+    <!-- Content Centered Vertically -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/welcome_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="?android:attr/textColorPrimary"
+                android:text="@string/welcome_message"
+                android:layout_marginBottom="8dp"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/referral_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:id="@+id/byAddressSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/rounded_background"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/homeAddressSuggestion"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_your_home_address"
+                    android:padding="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorSecondary"
+                    android:background="@drawable/input_background"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/input_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/location_icon"
+                    android:padding="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/location_icon"
+                    app:tint="?android:attr/textColorPrimary" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" 
+                android:layout_height="wrap_content" >
+                <Spinner android:id="@+id/availableProviders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/poppins"
+                    android:minHeight="48dp"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/providersLoader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/primary"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+            <Button android:id="@+id/continueBtnToAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/continueTxt"
+                android:padding="6dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:backgroundTint="@color/primary"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp" />
+
+            <TextView android:id="@+id/providerNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#2196F3"
+                android:layout_marginTop="16dp"
+                android:text="@string/provider_not_found"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp" >
+                <TextView android:id="@+id/textSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="@string/already_have_an_account_let_s_sign_in"
+                    android:textColor="?android:attr/textColorPrimary" />
+                <TextView android:id="@+id/textSignUp"
+                    android:visibility="gone"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/sign_up" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

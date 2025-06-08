@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:id="@+id/align" >
+
+    <ImageView android:id="@+id/vehicleImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/car_icon" />
+<!--        style="@style/NeomorphicImageViewStyle"-->
+    <Space android:layout_width="8dp" android:layout_height="match_parent" />
+    <TextView android:id="@+id/vehicleLicensePlateNo"
+        android:layout_width="wrap_content"
+        android:minWidth="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="12sp" />
+    <LinearLayout android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:orientation="vertical">
+        <TextView android:id="@+id/vehicleColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pickup_time"
+            android:fontFamily="@font/poppins"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:gravity="end"
+            android:textSize="12sp"/>
+        <TextView android:id="@+id/vehicleCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/_05_40_pm"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/primary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:gravity="end"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <ImageView android:id="@+id/editVehicle"
+        android:layout_marginStart="4dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/icon_three_dot"
+        android:layout_gravity="center_vertical"
+        android:padding="4dp"
+        app:tint="?android:attr/textColorPrimary" />
+</LinearLayout>

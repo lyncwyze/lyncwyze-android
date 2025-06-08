@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".enteredUser.children.Activity_ChildrenList">
+
+    <FrameLayout android:id="@+id/aclBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton android:id="@+id/aclBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow"
+            app:tint="?android:attr/textColorPrimary" />
+    </FrameLayout>
+
+    <TextView android:id="@+id/aclHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/children"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aclBackButtonContainer" />
+    <TextView android:id="@+id/aclSubheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/review_and_update_your_children_profile"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aclHeading" />
+
+    <ScrollView android:id="@+id/aclScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/aclAddMore"
+        app:layout_constraintTop_toBottomOf="@+id/aclSubheading"
+        tools:layout_editor_absoluteX="1dp"
+        android:visibility="invisible" >
+        <LinearLayout android:id="@+id/aclChildList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout android:id="@+id/aclNoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/aclSubheading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/aclAddMore" >
+        <ImageView
+            android:id="@+id/aclNoContentImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/error"
+            android:layout_gravity="center"
+            app:tint="?android:attr/textColorPrimary" />
+        <TextView
+            android:id="@+id/aclNoContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_child_added"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <Button android:id="@+id/aclAddMore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="@string/add_child"
+        android:enabled="true"
+        android:paddingTop="7dp"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

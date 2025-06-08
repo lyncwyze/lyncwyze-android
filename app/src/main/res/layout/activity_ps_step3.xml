@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enteredUser.profileSetup.Activity_PS_Step3">
+
+    <!-- Back Button Container -->
+    <FrameLayout
+        android:id="@+id/aclBackButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/aclBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/back_arrow" />
+
+        <!-- Logout Button -->
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/logout"
+            android:src="@drawable/logout_icon"
+            app:tint="@color/red_btn_bg_color" />
+    </FrameLayout>
+
+    <!-- New FrameLayout for Additional Content -->
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/aclBackButtonContainer" >
+
+        <TextView
+            android:id="@+id/work_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_your_profile_photo"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/work_title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_profile_photo_helps_people_recognize_you"
+            android:textColor="@color/subHeading"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="start" />
+
+        <!-- List of items -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_ensure_your_photo_is_clear_and_recognizable"
+            android:textColor="@color/subHeading"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_use_a_recent_photo_that_reflects_your_current_appearance"
+            android:textColor="@color/subHeading"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_avoid_using_group_photos_focus_on_just_you"
+            android:textColor="@color/subHeading"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="195dp"
+            android:layout_height="195dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circular_image"
+            android:clipToOutline="true"
+            android:src="@drawable/user_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/our_team_will_verify_that_your_photo_is_of_a_live_person_taken_in_real_time_and_we_will_use_the_photo_to_check_for_duplication_across_other_accounts"
+            android:textColor="@color/subHeading"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Continue button -->
+        <Button android:text="@string/next_accept_policies"
+            android:id="@+id/aclContinueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:enabled="true"
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

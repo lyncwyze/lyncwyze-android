@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--    android:background="@android:color/white"-->
+
+    <LinearLayout android:id="@+id/onlyDrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- Start -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/toActivityStartImg"
+                android:layout_gravity="center"
+                android:src="@drawable/location_upcoming"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView android:id="@+id/toActivityStartText"
+                android:text="@string/start_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingHorizontal="4dp" />
+            <TextView android:id="@+id/toActivityStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/__time_placeholder"
+                android:paddingHorizontal="4dp" />
+        </LinearLayout>
+        <!-- Pick-up -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/toActivityPickImg"
+                android:layout_gravity="center"
+                android:src="@drawable/location_upcoming"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingHorizontal="4dp">
+                <TextView android:id="@+id/toActivityPickText"
+                    android:text="@string/pick_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/toActivityPickLocation"
+                    android:text="@string/___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@+id/toActivityPickTime"
+                android:hint="@string/__time_placeholder"
+                android:paddingHorizontal="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Drop-off -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/toActivityDropImg"
+                android:layout_gravity="center"
+                android:src="@drawable/location_upcoming"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingHorizontal="4dp" >
+                <TextView android:id="@+id/toActivityDropText"
+                    android:text="@string/drop_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/toActivityDropLocation"
+                    android:text="___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@+id/toActivityDropTime"
+                android:hint="@string/__time_placeholder"
+                android:paddingHorizontal="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Waiting -->
+
+    <LinearLayout android:id="@+id/onlyPick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- Start -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/fromActivityStartImg"
+                android:layout_gravity="center"
+                android:src="@drawable/location_upcoming"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView android:id="@+id/fromActivityStartText"
+                android:text="@string/start_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingHorizontal="4dp" />
+            <TextView android:id="@+id/fromActivityStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/__time_placeholder"
+                android:paddingHorizontal="4dp" />
+        </LinearLayout>
+        <!-- Pick-up -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/fromActivityPickImg"
+                android:layout_gravity="center"
+                android:src="@drawable/location_upcoming"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingHorizontal="4dp">
+                <TextView android:id="@+id/fromActivityPickText"
+                    android:text="@string/pick_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/fromActivityPickLocation"
+                    android:text="@string/___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@+id/fromActivityPickTime"
+                android:hint="@string/__time_placeholder"
+                android:paddingHorizontal="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Drop-off -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView android:id="@+id/fromActivityDropHomeImg"
+                android:layout_gravity="center"
+                android:src="@drawable/location_upcoming"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingHorizontal="4dp" >
+                <TextView android:id="@+id/fromActivityDropHomeText"
+                    android:text="@string/drop_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/fromActivityDropHomeLocation"
+                    android:text="@string/___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@+id/fromActivityDropHomeTime"
+                android:hint="@string/__time_placeholder"
+                android:paddingHorizontal="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

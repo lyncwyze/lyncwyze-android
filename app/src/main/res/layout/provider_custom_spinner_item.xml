@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="8dp">
+
+    <TextView android:id="@+id/textLine1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <TextView android:id="@+id/textLine2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorSecondary" />
+
+    <TextView android:id="@+id/textLine3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorSecondary" />
+
+<!--    <Space android:layout_width="match_parent" android:layout_height="8dp" />-->
+<!--    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?android:attr/textColorSecondary" />-->
+</LinearLayout>

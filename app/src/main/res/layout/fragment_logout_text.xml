@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent"
+    tools:context=".enteredUser.settings.Fragment_LogoutText">
+    <TextView android:id="@+id/theLogoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="italic"
+        android:textColor="@color/main_blue_color"
+        android:layout_marginBottom="30dp"
+        android:text="@string/logout_dot"
+        android:gravity="end" />
+</LinearLayout>

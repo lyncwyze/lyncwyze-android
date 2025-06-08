@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "89780974002",
+    "project_id": "intelly-lyncwyze",
+    "storage_bucket": "intelly-lyncwyze.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89780974002:android:30f1145565a206ec13f4ab",
+        "android_client_info": {
+          "package_name": "com.intelly.lyncwyze"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq3_nhyqdEpNEyZs0wzTct3qohFneZnlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

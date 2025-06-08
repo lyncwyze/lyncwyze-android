@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enteredUser.feedback.Activity_RideFeedback">
+
+    <FrameLayout android:id="@+id/surveyBackBtnCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton android:id="@+id/surveyBackBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_description"
+            android:padding="8dp"
+            android:src="@drawable/back_arrow" />
+    </FrameLayout>
+
+    <ScrollView android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surveyBackBtnCont" >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+            <TextView android:id="@+id/averageRatingText"
+                android:text="@string/how_was_ride_with_abc"
+                android:paddingHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:gravity="center" />
+
+
+            <LinearLayout android:id="@+id/feedBackCategories"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <!-- Horizontal line -->
+            <View android:background="@android:color/darker_gray"
+                android:layout_marginVertical="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2" >
+                <TextView android:id="@+id/averageRatingScore"
+                    android:paddingStart="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="start"
+                    android:text="@string/average_rating"
+                    android:textColor="@color/textColor" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ratingbar_border" >
+                    <RatingBar android:id="@+id/averageRatingBar"
+                        android:isIndicator="true"
+                        android:progressTint="@android:color/holo_orange_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:stepSize="1" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <EditText android:id="@+id/reviewText"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_comment"
+                android:minHeight="100dp"
+                android:background="@drawable/rounded_background"
+                android:layout_marginHorizontal="16dp"
+                android:padding="8dp"
+                android:fontFamily="@font/poppins"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:gravity="top"/>
+
+            <Button android:id="@+id/favButton"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:textSize="16sp"
+                android:text="@string/favourite"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingHorizontal="16dp"
+                android:textAllCaps="true"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:stateListAnimator="@null"
+                android:backgroundTint="@color/white" />
+            <Button android:id="@+id/submitBtn"
+                android:text="@string/submit"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="16dp"
+                android:enabled="true"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:backgroundTint="@color/primary" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
